@@ -485,3 +485,23 @@ func floorLog2(n int) int {
 func powerTwo(n int) int {
 	return int(math.Pow(2, float64(n)))
 }
+
+func (n *Node) SetLeft(nn *Node) {
+	n.left = nn
+}
+
+func (n *Node) SetRight(nn *Node) {
+	n.right = nn
+}
+
+func (n *Node) Left() *Node {
+	return n.left
+}
+
+func (n *Node) Right() *Node {
+	return n.right
+}
+
+func (n *Node) Value() []byte {
+	return n.value
+}
